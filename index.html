@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ten Buttons with Different Actions</title>
+    <style>
+        /* Basic styling for buttons */
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hidden element */
+        #hiddenElement {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        /* Text element for manipulation */
+        #textElement {
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="document.getElementById('time').innerHTML=Date()">The time is?</button>
+    <p id="time"></p>
+
+    <button class="button" id="button1">Change Background Color</button>
+    <button class="button" id="button2">Show Alert</button>
+    <button class="button" id="button3">Hide Element</button>
+    <button class="button" id="button4">Show Element</button>
+    <button class="button" id="button5">Log to Console</button>
+    <button class="button" id="button6">Change Text</button>
+    <button class="button" id="button7">Increase Font Size</button>
+    <button class="button" id="button8">Decrease Font Size</button>
+    <button class="button" id="button9">Toggle Visibility</button>
+    <button class="button" id="button10">Reset Page</button>
+
+    <button class="button" id="blinkButton">Start Blinking Background</button>
+
+    <div id="hiddenElement">This is a hidden element.</div>
+    <div id="textElement">This text will be changed.</div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
